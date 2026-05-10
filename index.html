@@ -1,120 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-  <title>Risat Tasnim | Creative Portfolio</title>
-  <!-- Google Fonts: clean modern sans-serif -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
-  <!-- Font Awesome 6 (free icons) -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aria — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 
-<nav class="navbar">
-  <a href="#home">Home</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#about">About</a>
-  <a href="#contact">Contact</a>
+<!-- Cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Stars -->
+<div id="stars"></div>
+
+<!-- Nav -->
+<nav>
+  <div class="nav-logo">aria.</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
 </nav>
 
 <main>
-  <!-- Hero section -->
-  <section id="home" class="hero">
-    <div class="container hero-content">
-      <div class="hero-text">
-        <div class="greeting">✨ HELLO, I'M</div>
-        <h1>Risat <span>Tasnim</span></h1>
-        <p>Creative designer & front-end enthusiast who loves turning ideas into beautiful, interactive experiences.</p>
-        <a href="#projects" class="btn">View my work <i class="fas fa-arrow-right" style="margin-left: 6px; font-size: 0.8rem;"></i></a>
+  <!-- Hero -->
+  <section id="hero">
+    <div class="hero-orb orb1"></div>
+    <div class="hero-orb orb2"></div>
+    <div class="hero-eyebrow">Creative Developer & Designer</div>
+    <h1 class="hero-name">
+      Kazi Mst
+      <span>Risat Tasnim</span>
+    </h1>
+    <p class="hero-sub">
+      I craft digital experiences that feel alive — blending dark aesthetics,
+      thoughtful interactions, and a touch of magic ✨
+    </p>
+    <div class="hero-cta">
+      <a href="#work" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-ghost">Say Hello</a>
+    </div>
+    <div class="hearts">
+      <span class="heart" style="--d:3.5s;--del:-0s;--hue:0deg">♡</span>
+      <span class="heart" style="--d:4.2s;--del:-1.2s;--hue:30deg">✦</span>
+      <span class="heart" style="--d:3.8s;--del:-2s;--hue:60deg">♡</span>
+      <span class="heart" style="--d:4.8s;--del:-0.6s;--hue:90deg">✿</span>
+      <span class="heart" style="--d:3.2s;--del:-1.8s;--hue:120deg">♡</span>
+      <span class="heart" style="--d:5s;--del:-3s;--hue:160deg">✦</span>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <div class="about-img-wrap reveal">
+      <div class="about-img-frame">
+        <!-- <span class="avatar-placeholder">🌸</span> -->
+         <img src="profile.avif" style="width: 100%; height: 100%; object-fit: cover;" title="Risat Tasnim"  alt="Profile picture">
       </div>
-      <div class="hero-avatar">
-        <div class="avatar-circle">
-          <img title="Risat" style="width: 100%; height: 100%; border-radius: 100%; object-fit: cover;" src="https://photosnow.org/wp-content/uploads/2024/04/cute-girl-pic-cartoon_3.jpg" alt="Risat's picture">
+      <div class="about-deco"></div>
+    </div>
+    <div class="about-content reveal">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Dreamer &<br><em>Maker</em></h2>
+      <p>Hi, I'm Aria — a creative developer with a love for dark, moody interfaces and
+         interfaces that feel like they have a <strong>soul</strong>. I believe great design
+         lives at the intersection of art and code.</p>
+      <p>When I'm not pushing pixels, you'll find me lost in music, collecting vintage posters,
+         or rewatching my favourite Studio Ghibli films for the hundredth time 🌙</p>
+      <p>Currently based in <strong>Tokyo</strong>, open to remote opportunities worldwide.</p>
+      <div class="skills-chips">
+        <span class="chip">React</span>
+        <span class="chip">TypeScript</span>
+        <span class="chip">Figma</span>
+        <span class="chip">Three.js</span>
+        <span class="chip">GSAP</span>
+        <span class="chip">Motion Design</span>
+        <span class="chip">Framer</span>
+        <span class="chip">Node.js</span>
+        <span class="chip">UI/UX</span>
+        <span class="chip">Illustration</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work">
+    <div class="section-header reveal">
+      <div class="section-label">Selected Work</div>
+      <h2 class="section-title">Things I've<br><em>Crafted</em></h2>
+    </div>
+    <div class="work-grid">
+      <div class="work-card c1 reveal">
+        <div class="card-thumb">🔮</div>
+        <div class="card-body">
+          <div class="card-tag">Web App</div>
+          <div class="card-title">Lunar Dashboard</div>
+          <p class="card-desc">A mood-tracking app with phase-based visualisations and soft dark UI.</p>
+          <span class="card-arrow">View Case Study →</span>
+        </div>
+      </div>
+      <div class="work-card c2 reveal">
+        <div class="card-thumb">🌊</div>
+        <div class="card-body">
+          <div class="card-tag">Branding</div>
+          <div class="card-title">Abyssal Studio</div>
+          <p class="card-desc">Full brand identity for a deep-sea documentary collective.</p>
+          <span class="card-arrow">View Case Study →</span>
+        </div>
+      </div>
+      <div class="work-card c3 reveal">
+        <div class="card-thumb">🍄</div>
+        <div class="card-body">
+          <div class="card-tag">Interactive</div>
+          <div class="card-title">Forest Portal</div>
+          <p class="card-desc">WebGL experience for an indie game studio launch event.</p>
+          <span class="card-arrow">View Case Study →</span>
+        </div>
+      </div>
+      <div class="work-card c4 reveal">
+        <div class="card-thumb">🌸</div>
+        <div class="card-body">
+          <div class="card-tag">E-Commerce</div>
+          <div class="card-title">Petal & Ink</div>
+          <p class="card-desc">Art print shop with editorial dark layout and custom cart.</p>
+          <span class="card-arrow">View Case Study →</span>
+        </div>
+      </div>
+      <div class="work-card c5 reveal">
+        <div class="card-thumb">🦋</div>
+        <div class="card-body">
+          <div class="card-tag">Motion</div>
+          <div class="card-title">Metamorphosis</div>
+          <p class="card-desc">Scroll-driven animation piece exploring transformation & change.</p>
+          <span class="card-arrow">View Case Study →</span>
+        </div>
+      </div>
+      <div class="work-card c6 reveal">
+        <div class="card-thumb">🎵</div>
+        <div class="card-body">
+          <div class="card-tag">Product</div>
+          <div class="card-title">Nocturne App</div>
+          <p class="card-desc">Night-mode music player with audio visualiser and lyric sync.</p>
+          <span class="card-arrow">View Case Study →</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects section -->
-  <div class="container" id="projects">
-    <h2 class="section-title fade-up">Featured projects</h2>
-    <div class="projects-grid">
-      <div class="project-card fade-up">
-        <div class="project-icon"><i class="fas fa-palette"></i></div>
-        <h3>Bloom Studio</h3>
-        <p>Minimalist brand identity & web design for a local flower studio — soft gradients and organic shapes.</p>
-        <span class="project-tag">UI/UX</span>
+  <!-- Services -->
+  <section id="services">
+    <div class="reveal">
+      <div class="section-label">What I Do</div>
+      <h2 class="section-title">Services &<br><em>Specialities</em></h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-item reveal">
+        <span class="service-icon">✦</span>
+        <div class="service-title">UI / UX Design</div>
+        <p class="service-desc">Crafting interfaces that are both beautiful and intuitive — from wireframe to pixel-perfect mockup.</p>
       </div>
-      <div class="project-card fade-up">
-        <div class="project-icon"><i class="fas fa-mobile-alt"></i></div>
-        <h3>EcoTrack</h3>
-        <p>Mobile app concept to track daily carbon footprint, designed with playful illustrations and micro-interactions.</p>
-        <span class="project-tag">App Design</span>
+      <div class="service-item reveal">
+        <span class="service-icon">🌙</span>
+        <div class="service-title">Creative Dev</div>
+        <p class="service-desc">Bringing designs to life with React, WebGL, and buttery smooth animations using GSAP & Motion.</p>
       </div>
-      <div class="project-card fade-up">
-        <div class="project-icon"><i class="fas fa-code"></i></div>
-        <h3>Artisan Market</h3>
-        <p>Responsive e-commerce prototype with smooth animations and accessible components. Built with modern CSS.</p>
-        <span class="project-tag">Frontend</span>
+      <div class="service-item reveal">
+        <span class="service-icon">🎨</span>
+        <div class="service-title">Brand Identity</div>
+        <p class="service-desc">Full visual identity systems: logos, colour palettes, typography, and brand guidelines.</p>
+      </div>
+      <div class="service-item reveal">
+        <span class="service-icon">✿</span>
+        <div class="service-title">Motion Design</div>
+        <p class="service-desc">Micro-interactions, scroll experiences, and animated UI components that delight users.</p>
+      </div>
+      <div class="service-item reveal">
+        <span class="service-icon">🔮</span>
+        <div class="service-title">3D & WebGL</div>
+        <p class="service-desc">Immersive web experiences with Three.js, particle systems, and shader magic.</p>
+      </div>
+      <div class="service-item reveal">
+        <span class="service-icon">🌸</span>
+        <div class="service-title">Illustration</div>
+        <p class="service-desc">Digital illustration for editorials, product packaging, and character design.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Skills section -->
-  <div class="container" id="skills">
-    <h2 class="section-title fade-up">What I bring to the table</h2>
-    <div class="skills-wrapper">
-      <div class="skill-item fade-up"><i class="fab fa-figma"></i> Figma</div>
-      <div class="skill-item fade-up"><i class="fab fa-html5"></i> HTML5</div>
-      <div class="skill-item fade-up"><i class="fab fa-css3-alt"></i> CSS3</div>
-      <div class="skill-item fade-up"><i class="fab fa-js"></i> JavaScript</div>
-      <div class="skill-item fade-up"><i class="fas fa-draw-polygon"></i> Illustration</div>
-      <div class="skill-item fade-up"><i class="fas fa-pen-fancy"></i> UI design</div>
-    </div>
-  </div>
-
-  <!-- About + fun fact -->
-  <div class="container" id="about">
-    <h2 class="section-title fade-up">A little about me</h2>
-    <div class="about-content fade-up">
-      <div class="about-text">
-        <p>🌸 I’m Risat, a 21-year-old creative based in Seattle. I believe design should feel warm, intuitive, and bring a smile to people's faces. With a background in visual arts and self-taught coding, I merge aesthetics with functionality.</p>
-        <p>📚 When I'm not designing or prototyping, you’ll find me reading fantasy novels, sipping matcha lattes, or capturing golden-hour photos around the city. I love collaborating on meaningful projects that tell a story.</p>
-        <p>✨ Currently exploring motion design and improving my React skills — always curious, always learning.</p>
-      </div>
-      <div class="about-highlight">
-        <i class="fas fa-mug-hot"></i>
-        <h4>Fun fact</h4>
-        <p>I've illustrated over 100+ digital portraits and once built a tiny CSS-only garden with animated flowers 🌻</p>
+  <!-- Contact -->
+  <section id="contact">
+    <div class="contact-inner reveal">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's Make<br><em>Something</em></h2>
+      <p class="contact-desc">
+        Have a project in mind? I'd love to chat. Whether it's a full redesign, a
+        quick collab, or just saying hi — my inbox is always open ✉️
+      </p>
+      <a href="mailto:aria@example.com" class="btn-primary" style="display:inline-block;margin-bottom:32px;">
+        Send a Message
+      </a>
+      <div class="contact-links">
+        <a href="#" class="social-pill">🐦 Twitter</a>
+        <a href="#" class="social-pill">📷 Instagram</a>
+        <a href="#" class="social-pill">💼 LinkedIn</a>
+        <a href="#" class="social-pill">⚡ Dribbble</a>
+        <a href="#" class="social-pill">🐙 GitHub</a>
       </div>
     </div>
-  </div>
-
-  <!-- Contact & socials -->
-  <div class="container" id="contact">
-    <h2 class="section-title fade-up">Let's connect</h2>
-    <div class="contact-flex fade-up">
-      <div class="contact-info">
-        <a href="mailto:ellaara@portfolio.me"><i class="far fa-envelope"></i> risat@portfolio.me</a>
-        <a href="#"><i class="fab fa-github"></i> github/risatcreates</a>
-        <a href="#"><i class="fab fa-linkedin-in"></i> linkedin.com/in/tasnim</a>
-      </div>
-      <div class="social-links">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
-        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
-      </div>
-    </div>
-  </div>
+  </section>
 </main>
 
 <footer>
-  <p>© 2025 Risat Tasnim — designed with <i class="fas fa-heart" style="color: #d96c4e;"></i> and simple animations</p>
+  <span>© 2026 Aria Nakamura — All rights reserved</span>
+  <span>Made with <span style="color:var(--accent)">♡</span> & lots of late nights 🌙</span>
 </footer>
 </body>
 </html>
